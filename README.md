@@ -8,4 +8,7 @@ MoggyCoin is a new generation of cryptocurrency inspired by the rise in NFTs. Th
 
 MoggyCoins consist of one of kind code which functions like an NFT you can sell it for money, keep it or send it to someone else.
 
+<h1>
+How to use
+</h1>
 
