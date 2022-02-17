@@ -21,13 +21,15 @@ ECHO  TYPE ANY NUMBER AND DO SOMETHING
 ECHO  ................................
 ECHO.
 ECHO  1 - MINE SUM COINS                   
-ECHO  2 - VIEW UR COINS             
+ECHO  2 - VIEW UR COINS 
 ECHO  3 - BYE BYE
+ECHO  4 - ABOUT
 ECHO.          
 SET /P M=Type 1, 2, 3, 4, 5, or 6 then press ENTER:
 IF %M%==1 GOTO MINE
 IF %M%==2 GOTO VIEW
 IF %M%==3 call SquirrelBoot
+IF %M%==4 GOTO AB
 
 :VIEW
 cls
@@ -191,3 +193,10 @@ set _RND=%Random%
 set /A _RND=_RND%%%_Len%
 set _RndAlphaNum=!_RndAlphaNum!!_Alphanumeric:~%_RND%,1!
 if !_count! lss %_RNDLength% goto _loop
+
+:AB
+ECHO MOGGYCOIN
+ECHO.
+ECHO The new and secure cryptocurrency worth your time!
+ECHO.
+ECHO Copyright (c) Squirrel Computers and Adam 2021 to 2022
