@@ -1,64 +1,55 @@
 @echo off
 title MoggyCoin
 color 0a
-cd SqUIrrel
-mode con cols=80 lines=25
+cd wallet
 setlocal enabledelayedexpansion
-fstoggle 1
 
 :MENU
 CLS
 ECHO.
-ECHO .............................................................................
-ECHO  ллл    ллл  лллллл   лллллл   лллллл лл    лл  лллллл  лллллл  лл ллл    лл 
-ECHO  лллл  лллл лл    лл лл       лл       лл  лл  лл      лл    лл лл лллл   лл 
-ECHO  лл лллл лл лл    лл лл   ллл лл   ллл   лл    лл      лл    лл лл лл лл  лл
-ECHO  лл  лл  лл лл    лл лл    лл лл    лл   лл    лл      лл    лл лл лл  лл лл
-ECHO  лл      лл  лллллл   лллллл   лллллл    лл     лллллл  лллллл  лл лл   лллл  
-ECHO .............................................................................
-ECHO                                                                   ALPHA 1.0
+ECHO     _/      _/    _/_/      _/_/_/    _/_/_/  _/      _/    _/_/_/    _/_/    _/_/_/  _/      _/  _/  _/   
+ECHO    _/_/  _/_/  _/    _/  _/        _/          _/  _/    _/        _/    _/    _/    _/_/    _/  _/  _/    
+ECHO   _/  _/  _/  _/    _/  _/  _/_/  _/  _/_/      _/      _/        _/    _/    _/    _/  _/  _/  _/  _/     
+ECHO  _/      _/  _/    _/  _/    _/  _/    _/      _/      _/        _/    _/    _/    _/    _/_/              
+ECHO _/      _/    _/_/      _/_/_/    _/_/_/      _/        _/_/_/    _/_/    _/_/_/  _/      _/  _/  _/
+ECHO  01001101 01001111 01000111 01000111 01011001 01000011 01001111 01001001 01001110 00100001 00100001 
+ECHO ....................................................................................................
+ECHO                                                                                            ALPHA 1.0
+ECHO  IN BINARY WE TRUST!
 ECHO.
-ECHO  ...............................
 ECHO  TYPE ANY NUMBER AND DO SOMETHING
-ECHO  ...............................
+ECHO  ................................
 ECHO.
-ECHO  1 - MINE DESE COINS                   
-ECHO  2 - VIEW DOSE COINS             
-ECHO  3 - MAKE A TRANSACTION OR SAVE DEM COINS
-ECHO  4 - ACCOUNT                           
-ECHO  5 - EXIT
+ECHO  1 - MINE SUM COINS                   
+ECHO  2 - VIEW UR COINS             
+ECHO  3 - BYE BYE
 ECHO.          
 SET /P M=Type 1, 2, 3, 4, 5, or 6 then press ENTER:
 IF %M%==1 GOTO MINE
-IF %M%==2 GOTO VEW
-IF %M%==3 GOTO TRANS
-IF %M%==4 GOTO CREATE
-IF %M%==5 call SquirrelBoot
-:CREATE
-CLS
-echo Name your profile.
-set /p Name_1=
-pause
-CLS
-goto MENU
-:VEW
+IF %M%==2 GOTO VIEW
+IF %M%==3 call SquirrelBoot
+
+:VIEW
 cls
-ECHO   _________  _____  ________
-ECHO  / ___/ __ \/  _/ \/ / __/ /
-ECHO / /__/ /_/ // //    /\ \/_/ 
-ECHO \___/\____/___/_/\_/___(_)
+ECHO    _/    _/  _/_/_/          _/_/_/    _/_/    _/_/_/  _/      _/    _/_/_/   
+ECHO   _/    _/  _/    _/      _/        _/    _/    _/    _/_/    _/  _/          
+ECHO  _/    _/  _/_/_/        _/        _/    _/    _/    _/  _/  _/    _/_/       
+ECHO _/    _/  _/    _/      _/        _/    _/    _/    _/    _/_/        _/      
+ECHO  _/_/    _/    _/        _/_/_/    _/_/    _/_/_/  _/      _/  _/_/_/
 ECHO.
 ECHO HERE YOU CAN SEE YOUR HARD EARNED COINS
 echo %COINS% M     (M = MOGGYCOINS)
 pause
 goto MENU
+
 :MINE
 cls
-ECHO  8b    d8 88 88b 88 888888     8888b.  888888 8b    d8      dP""b8  dP"Yb  88 88b 88 .dP"Y8 d8b 
-ECHO  88b  d88 88 88Yb88 88__        8I  Yb 88__   88b  d88     dP   `" dP   Yb 88 88Yb88 `Ybo." Y8P 
-ECHO  88YbdP88 88 88 Y88 88""        8I  dY 88""   88YbdP88     Yb      Yb   dP 88 88 Y88 o.`Y8b `"' 
-ECHO  88 YY 88 88 88  Y8 888888     8888Y"  888888 88 YY 88      YboodP  YbodP  88 88  Y8 8bodP' (8) 
-ECHO                                 MINE DEM COINS 
+ECHO     _/      _/  _/_/_/  _/      _/  _/_/_/_/        _/_/_/  _/    _/  _/      _/        _/_/_/    _/_/    _/_/_/  _/      _/    _/_/_/   
+ECHO    _/_/  _/_/    _/    _/_/    _/  _/            _/        _/    _/  _/_/  _/_/      _/        _/    _/    _/    _/_/    _/  _/          
+ECHO   _/  _/  _/    _/    _/  _/  _/  _/_/_/          _/_/    _/    _/  _/  _/  _/      _/        _/    _/    _/    _/  _/  _/    _/_/       
+ECHO  _/      _/    _/    _/    _/_/  _/                  _/  _/    _/  _/      _/      _/        _/    _/    _/    _/    _/_/        _/      
+ECHO _/      _/  _/_/_/  _/      _/  _/_/_/_/      _/_/_/      _/_/    _/      _/        _/_/_/    _/_/    _/_/_/  _/      _/  _/_/_/         
+ECHO                                                            MINE SUM COINS
 ECHO.
 set /a splash=%random%*100/32767+1
 if %splash% EQU 1 echo  === bcb0e8031088eff559e2df3fa0e9c708 ===
@@ -98,7 +89,7 @@ if %splash% EQU 34 echo  === 27a8d3471f7619d5fcadb5e9624996fd ===
 if %splash% EQU 35 echo  === fe075d1629bdfe7a399540c4266fca9e ===
 if %splash% EQU 36 echo  === 4d283f154156a15a0bfdd254ef66298d ===
 if %splash% EQU 37 echo  === cbbac0873029fa871a2ae92d33888a3a ===
-if %splash% EQU 38 goto WIN2
+if %splash% EQU 38 goto win1
 if %splash% EQU 39 echo  === cbbac0873029fa871a2ae92d33888a3a ===
 if %splash% EQU 40 echo  === cde687b7524b6e0dc949c2f2770c9e22 ===
 if %splash% EQU 41 echo  === 314d1f9d30ccf98bf838bdbb6a17c399 ===
@@ -115,7 +106,7 @@ if %splash% EQU 51 echo  === ba837a4d2e1e0e2cf4e8070ef2188fbd ===
 if %splash% EQU 52 echo  === 3a4164e29a72ea2723bb090fa1d5197b ===
 if %splash% EQU 53 echo  === f1963fcf7da166f4e5facae95af94113 ===
 if %splash% EQU 54 echo  === a8c9d627687d7e7b7c5b3233ef4c631b ===
-if %splash% EQU 55 GOTO win3
+if %splash% EQU 55 GOTO win1
 if %splash% EQU 56 echo  === a8c9d627687d7e7b7c5b3233ef4c631b ===
 if %splash% EQU 57 echo  === eef26e3fe9d8a13c471e8447cd3141cf ===
 if %splash% EQU 58 echo  === 87e9af0a7778944b5c807c56e8070095 ===
@@ -123,7 +114,7 @@ if %splash% EQU 59 echo  === 18bac788954eb944a783c5bdfb7359ba ===
 if %splash% EQU 60 echo  === cfcad9487c5f5313f5e86f3922c6f010 ===
 if %splash% EQU 61 echo  === e1d0eeb72f0f0f0791d094f971564676 ===
 if %splash% EQU 62 echo  === bbd5951428dd8c3379ef7ccdc8e054d9 ===
-if %splash% EQU 63 goto win3
+if %splash% EQU 63 goto win1
 if %splash% EQU 64 echo  === 8f4ba20d0412f3048bf02b856b00a4fd ===
 if %splash% EQU 65 echo  === 8f4ba20d0412f3048bf02b856b00a4fd ===
 if %splash% EQU 66 echo  === 15d22951289edc0d97dd2b9f46049213 ===
@@ -133,7 +124,7 @@ if %splash% EQU 69 echo  === aed19af859ea609f1be91f41938963a3 ===
 if %splash% EQU 70 echo  === 46099272de177bba69156a898daa1311 ===
 if %splash% EQU 71 echo  === dea67b2873b3a201fcc632dd6a0ce86d ===
 if %splash% EQU 72 echo  === da2e619f1f7d693c92344953a89c541c ===
-if %splash% EQU 73 goto win4
+if %splash% EQU 73 goto win1
 if %splash% EQU 74 echo  === 93936de1a071dd40ed488571e6261511 ===
 if %splash% EQU 75 echo  === 09fece209904c28b8dc00440c7552765 ===
 if %splash% EQU 76 echo  === 6f0c9d6a8de80c24bb29bea606d39a6a ===
@@ -151,7 +142,7 @@ if %splash% EQU 87 echo  === 7679d522acada718f04471db55a7104b ===
 if %splash% EQU 88 echo  === d4ded481b5b660d7039aa42f688e68c4 ===
 if %splash% EQU 89 echo  === c30f572650ede5614e4833cf8187df7e ===
 if %splash% EQU 90 echo  === 79b63d52a04513ad496fc1b6ff534b1b ===
-if %splash% EQU 91 goto win5
+if %splash% EQU 91 goto win1
 if %splash% EQU 92 echo  === 79b63d52a04513ad496fc1b6ff534b1b ===
 if %splash% EQU 93 echo  === 3bd417654c484c69b419cad4b038b243 ===
 if %splash% EQU 94 echo  === 61e6bad30568b6a2fcf7b89f95a66b64 ===
@@ -165,250 +156,38 @@ ECHO.
 ECHO. SORRY NO COINS IN THIS BLOCK
 ECHO 1 - MINE A NEW BLOCK
 ECHO 2 - GOTO MENU
-SET /P M=TYPE YOU CHOICE AND THEN PRESS ENTER:
+SET /P M=TYPE U CHOICE AN DEN PRES ENTR:
 IF %M%==1 GOTO MINE
 IF %M%==2 GOTO MENU
+
 :win1
-echo you mined a coin ore
-echo hash = b7feaa8cc9bf51b4e6e124a6319d3c4d
-msg * you got 50 coins
-set /a COINS+=50
-ECHO YOU GOT 50M
+echo you mined a Moggy ore
+echo hash = !_RndAlphaNum!
+msg * U GOT COIN
+set /a COINS+=1
+ECHO > !_RndAlphaNum!.MOGGYCOIN
+ECHO YOU GOT 1M
 ECHO 1 - MINE A NEW BLOCK
 ECHO 2 - GOTO MENU
 echo.
 SET /P M=TYPE YOU CHOICE AND THEN PRESS ENTER:
 IF %M%==1 GOTO MINE
 IF %M%==2 GOTO MENU
-:WIN2
-echo you mined a coin ore
-echo hash = e50f98b8473a9ceba2820203e202d1ce
-msg * you got 70 coins
-set /a COINS+=70
-ECHO YOU GOT 70M
-ECHO 1 - MINE A NEW BLOCK
-ECHO 2 - GOTO MENU
-echo.
-SET /P M=TYPE YOU CHOICE AND THEN PRESS ENTER:
-IF %M%==1 GOTO MINE
-IF %M%==2 GOTO MENU
-:win3
-echo you mined a coin ore
-echo hash = f63ffa1f9fbe4b29a8de1cd797385900
-msg * you got 25 coins
-set /a COINS+=25
-ECHO YOU GOT 25M
-ECHO 1 - MINE A NEW BLOCK
-ECHO 2 - GOTO MENU
-echo.
-SET /P M=TYPE YOU CHOICE AND THEN PRESS ENTER:
-IF %M%==1 GOTO MINE
-IF %M%==2 GOTO MENU
-:win4
-echo you mined a coin ore
-echo hash = 89c3817d5e2bdf63b959f132dc3bd036
-msg * you got 30 coins
-set /a COINS+=30
-ECHO YOU GOT 30M
-ECHO 1 - MINE A NEW BLOCK
-ECHO 2 - GOTO MENU
-echo.
-SET /P M=TYPE YOU CHOICE AND THEN PRESS ENTER:
-IF %M%==1 GOTO MINE
-IF %M%==2 GOTO MENU
-:win5
-echo you mined a coin ore
-echo hash = c27df69371ab292aba540ee10886819d
-msg * you got 45 coins
-set /a COINS+=45
-ECHO YOU GOT 45M
-ECHO 1 - MINE A NEW BLOCK
-ECHO 2 - GOTO MENU
-echo.
-SET /P M=TYPE YOU CHOICE AND THEN PRESS ENTER:
-IF %M%==1 GOTO MINE
-IF %M%==2 GOTO MENU
-:TRANS
-CLS
-ECHO WOULD YOU LIKE TO MAKE A TRANSACTION OR SAVE YOUR COINS
-ECHO 1-MAKE A TRANSACTION
-ECHO 2-SAVE COINS
-ECHO 3-RECEIVE DEM COINS
-SET /P M=TYPE YOU CHOICE AND THEN PRESS ENTER:
-IF %M%==1 GOTO TRANSACTION
-IF %M%==2 GOTO HELLO
-IF %M%==3 GOTO ADD
-:TRANSACTION
-CLS 
-echo please select the amount of coins you would like to transact
-ECHO 1-1000
-ECHO 2-2000
-ECHO 3-3000
-echo 4-4000
-echo 5-5000
-SET /P M=TYPE YOU CHOICE AND THEN PRESS ENTER:
-IF %M%==1 goto 100
-IF %M%==2 GOTO 200
-IF %M%==3 GOTO 300
-IF %M%==4 GOTO 400
-IF %M%==5 GOTO 500
-:ADD
-CLS 
-echo please select the amount of coins you would like to recive
-ECHO 1-1000
-ECHO 2-2000
-ECHO 3-3000
-echo 4-4000
-echo 5-5000
-SET /P M=TYPE YOU CHOICE AND THEN PRESS ENTER:
-IF %M%==1 goto 10000
-IF %M%==2 GOTO 20000
-IF %M%==3 GOTO 30000
-IF %M%==4 GOTO 40000
-IF %M%==5 GOTO 50000
-:10000
-echo please select the transaction code.
-ECHO 1-32102340
-ECHO 2-92102340
-ECHO 3-11102340
-echo 4-59702340
-echo 5-22202340
-SET /P M=TYPE YOU CHOICE AND THEN PRESS ENTER:
-IF %M%==1 goto fail
-IF %M%==2 GOTO fail
-IF %M%==3 GOTO 10
-IF %M%==4 GOTO fail
-IF %M%==5 GOTO fail
-:20000
-echo please select the transaction code.
-ECHO 1-32102340
-ECHO 2-92102340
-ECHO 3-11102340
-echo 4-59702340
-echo 5-22202340
-SET /P M=TYPE YOU CHOICE AND THEN PRESS ENTER:
-IF %M%==1 goto fail
-IF %M%==2 GOTO fail
-IF %M%==3 GOTO fail
-IF %M%==4 GOTO fail
-IF %M%==5 GOTO 20
-:30000
-echo please select the transaction code.
-ECHO 1-32102340
-ECHO 2-92102340
-ECHO 3-11102340
-echo 4-59702340
-echo 5-22202340
-SET /P M=TYPE YOU CHOICE AND THEN PRESS ENTER:
-IF %M%==1 goto 30
-IF %M%==2 GOTO fail
-IF %M%==3 GOTO fail
-IF %M%==4 GOTO fail
-IF %M%==5 GOTO fail
-:40000
-echo please select the transaction code.
-ECHO 1-32102340
-ECHO 2-92102340
-ECHO 3-11102340
-echo 4-59702340
-echo 5-22202340
-SET /P M=TYPE YOU CHOICE AND THEN PRESS ENTER:
-IF %M%==1 goto fail
-IF %M%==2 GOTO 40
-IF %M%==3 GOTO fail
-IF %M%==4 GOTO fail
-IF %M%==5 GOTO fail
-:50000
-echo please select the transaction code.
-ECHO 1-32102340
-ECHO 2-92102340
-ECHO 3-11102340
-echo 4-59702340
-echo 5-22202340
-SET /P M=TYPE YOU CHOICE AND THEN PRESS ENTER:
-IF %M%==1 goto fail
-IF %M%==2 GOTO fail
-IF %M%==3 GOTO fail
-IF %M%==4 GOTO 50
-IF %M%==5 GOTO fail
-:10
-cls
-echo YOUR TRANSACTION IS COMPLETE THANKS FOR USING MOGGYCOIN
-set /a COINS+=1000
-pause
-goto MENU
-:20
-cls
-echo YOUR TRANSACTION IS COMPLETE THANKS FOR USING MOGGYCOIN
-set /a COINS+=2000
-pause
-goto MENU
-:30
-cls
-echo YOUR TRANSACTION IS COMPLETE THANKS FOR USING MOGGYCOIN
-set /a COINS+=3000
-pause
-goto MENU
-:40
-cls
-echo YOUR TRANSACTION IS COMPLETE THANKS FOR USING MOGGYCOIN
-set /a COINS+=4000
-pause
-goto MENU
-:50
-cls
-echo YOUR TRANSACTION IS COMPLETE THANKS FOR USING MOGGYCOIN
-set /a COINS+=5000
-pause
-goto MENU
-:hello
-CLS 
-echo please select the amount of coins you would like to save
-ECHO 1-1000
-ECHO 2-2000
-ECHO 3-3000
-echo 4-4000
-echo 5-5000
-SET /P M=TYPE YOU CHOICE AND THEN PRESS ENTER:
-IF %M%==1 goto 100
-IF %M%==2 GOTO 200
-IF %M%==3 GOTO 300
-IF %M%==4 GOTO 400
-IF %M%==5 GOTO 500
-:100
-cls
-echo YOUR CODE IS 11102340
-set /a COINS-=1000
-pause
-goto MENU
-:200
-cls
-echo YOUR CODE IS 22202340
-set /a COINS-=2000
-pause
-goto MENU
-:300
-cls
-echo YOUR CODE IS 32102340
-set /a COINS-=3000
-pause
-goto MENU
-:400
-cls
-echo YOUR CODE IS 92102340
-set /a COINS-=4000
-pause
-goto MENU
-:500
-cls
-echo YOUR CODE IS 59702340
-set /a COINS-=5000
-pause
-goto MENU
-:fail
-cls
-echo YOU FAILED A TRANSACTION CODE! THEIF
-ECHO AS A PUNISHMENT YOU ARE GOING TO LOSE
-ECHO YOUR HARD EARNED COINS
-pause
-goto EOF
+
+set _RNDLength=36
+set _Alphanumeric=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789
+set _Str=%_Alphanumeric%987654321
+
+:_LenLoop
+if not "%_Str:~18%"=="" set _Str=%_Str:~9%& set /A _Len+=9& goto :_LenLoop
+set _tmp=%_Str:~9,1%
+set /A _Len=_Len+_tmp
+set _count=0
+set _RndAlphaNum=
+
+:_loop
+set /a _count+=1
+set _RND=%Random%
+set /A _RND=_RND%%%_Len%
+set _RndAlphaNum=!_RndAlphaNum!!_Alphanumeric:~%_RND%,1!
+if !_count! lss %_RNDLength% goto _loop
