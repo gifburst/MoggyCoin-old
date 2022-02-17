@@ -25,7 +25,7 @@ ECHO  2 - VIEW UR COINS
 ECHO  3 - BYE BYE
 ECHO  4 - ABOUT
 ECHO.          
-SET /P M=Type 1, 2, 3 or 4 then press ENTER:
+SET /P M=TYPE U CHOICE AN DEN PRES ENTR:
 IF %M%==1 GOTO MINE
 IF %M%==2 GOTO VIEW
 IF %M%==3 call SquirrelBoot
@@ -39,7 +39,7 @@ ECHO  _/    _/  _/_/_/        _/        _/    _/    _/    _/  _/  _/    _/_/
 ECHO _/    _/  _/    _/      _/        _/    _/    _/    _/    _/_/        _/      
 ECHO  _/_/    _/    _/        _/_/_/    _/_/    _/_/_/  _/      _/  _/_/_/
 ECHO.
-ECHO HERE YOU CAN SEE YOUR HARD EARNED COINS
+ECHO HERE U CAN C UR HARD EARND COINS
 echo %COINS% M     (M = MOGGYCOINS)
 pause
 goto MENU
@@ -155,8 +155,8 @@ if %splash% EQU 98 echo  === 4f9959fe9fa7ec6f48fbe8088790e76d ===
 if %splash% EQU 99 echo  === 072bbda473dea7173998994029ec3c0a ===
 if %splash% EQU 100 echo  === 43d9dfa3ec233a574f9592346f7fef9e ===
 ECHO.
-ECHO. SORRY NO COINS IN THIS BLOCK
-ECHO 1 - MINE A NEW BLOCK
+ECHO. SORRY NO COINS IN THIS AREA
+ECHO 1 - MINE FOR MORE ORE
 ECHO 2 - GOTO MENU
 SET /P M=TYPE U CHOICE AN DEN PRES ENTR:
 IF %M%==1 GOTO MINE
@@ -169,7 +169,7 @@ msg * U GOT COIN
 set /a COINS+=1
 ECHO > !_RndAlphaNum!.MOGGYCOIN
 ECHO YOU GOT 1M
-ECHO 1 - MINE A NEW BLOCK
+ECHO 1 - MINE FOR MORE ORE
 ECHO 2 - GOTO MENU
 echo.
 SET /P M=TYPE YOU CHOICE AND THEN PRESS ENTER:
