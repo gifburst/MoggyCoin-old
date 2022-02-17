@@ -40,7 +40,7 @@ ECHO _/    _/  _/    _/      _/        _/    _/    _/    _/    _/_/        _/
 ECHO  _/_/    _/    _/        _/_/_/    _/_/    _/_/_/  _/      _/  _/_/_/
 ECHO.
 ECHO HERE U CAN C UR HARD EARND COINS
-echo %COINS% M     (M = MOGGYCOINS)
+echo %COINS% Ⰰ     (Ⰰ = MOGGYCOINS)
 pause
 goto MENU
 
