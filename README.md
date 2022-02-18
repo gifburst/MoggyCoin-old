@@ -20,6 +20,4 @@ You now have some MoggyCoin but you need to confirm it by registering it so it b
   How to register?
 </h1>
 
-to register your coins create a discord account and join the Bank of MoggyCoin server https://discord.gg/qqhgZhKBnX
-
 Download the MoggyCoin software <a href="https://github.com/squirrelcom/MoggyCoin">Here</a>
