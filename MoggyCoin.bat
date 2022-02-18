@@ -64,7 +64,7 @@ ECHO  01001101 01001111 01000111 01000111 01011001 01000011 01001111 01001001 01
 ECHO ....................................................................................................
 ECHO                                                                                            ALPHA 1.0
 ECHO.
-ECHO The new and secure cryptocurrency worth your time!
+ECHO The new and secure currency worth your time!
 ECHO.
 ECHO Copyright (c) Squirrel Computers and Adam 2021 to 2022
 ECHO.
