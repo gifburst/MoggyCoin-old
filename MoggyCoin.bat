@@ -21,7 +21,6 @@ ECHO  TYPE ANY NUMBER AND DO SOMETHING
 ECHO  ................................
 ECHO.
 ECHO  1 - MINE SUM COINS                   
-ECHO  2 - VIEW UR COINS 
 ECHO  3 - BYE BYE
 ECHO  4 - ABOUT
 ECHO  5 - GO REGISTR OR SELL SUM COINS
@@ -50,7 +49,7 @@ goto MENU
 :MINE
 cls
 start Miner.bat
-ping localhost -n 5 >nul
+ping localhost -n 10 >nul
 GOTO MINE
 
 :AB
