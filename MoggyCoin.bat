@@ -24,14 +24,14 @@ ECHO  1 - MINE SUM COINS
 ECHO  2 - VIEW UR COINS 
 ECHO  3 - BYE BYE
 ECHO  4 - ABOUT
-ECHO  5 - CREATE AN ACCOUNT (Required to save and sell Coins)
+ECHO  5 - GO REGISTR OR SELL SUM COINS
 ECHO.          
 SET /P M=TYPE U CHOICE AN DEN PRES ENTR:
 IF %M%==1 GOTO MINE
 IF %M%==2 GOTO VIEW
 IF %M%==3 call SquirrelBoot
 IF %M%==4 GOTO AB
-IF %M%==5 GOTO CREATE
+IF %M%==5 start https://discord.gg/qqhgZhKBnX
 
 
 :VIEW
@@ -186,7 +186,7 @@ ECHO You mined a MoggyOre!!
 ECHO hash = %_RndAlphaNum%
 msg * U GOT SUM COIN
 set /a COINS+=1
-ECHO %date% %time% Miner Name %Name_1%> !_RndAlphaNum!.MOGGYCOIN
+ECHO %date% %time% Miner Name %USERNAME%> !_RndAlphaNum!.MOGGYCOIN
 ECHO YOU GOT 1M
 ECHO 1 - MINE FOR MORE ORE
 ECHO 2 - GOTO MENU
@@ -211,21 +211,5 @@ ECHO The new and secure cryptocurrency worth your time!
 ECHO.
 ECHO Copyright (c) Squirrel Computers and Adam 2021 to 2022
 ECHO.
-pause
-GOTO MENU
-
-:CREATE
-CLS
-ECHO.
-ECHO     _/      _/    _/_/      _/_/_/    _/_/_/  _/      _/    _/_/_/    _/_/    _/_/_/  _/      _/  _/  _/   
-ECHO    _/_/  _/_/  _/    _/  _/        _/          _/  _/    _/        _/    _/    _/    _/_/    _/  _/  _/    
-ECHO   _/  _/  _/  _/    _/  _/  _/_/  _/  _/_/      _/      _/        _/    _/    _/    _/  _/  _/  _/  _/     
-ECHO  _/      _/  _/    _/  _/    _/  _/    _/      _/      _/        _/    _/    _/    _/    _/_/              
-ECHO _/      _/    _/_/      _/_/_/    _/_/_/      _/        _/_/_/    _/_/    _/_/_/  _/      _/  _/  _/
-ECHO  01001101 01001111 01000111 01000111 01011001 01000011 01001111 01001001 01001110 00100001 00100001 
-ECHO ....................................................................................................
-ECHO                                                                                            ALPHA 1.0
-ECHO Name your profile to register the coin in your name note this will not be saved so you have to create a name everytime you restart the app
-set /p Name_1=
 pause
 GOTO MENU
