@@ -155,14 +155,14 @@ if %splash% EQU 98 goto win1
 if %splash% EQU 99 echo  === 072bbda473dea7173998994029ec3c0a ===
 if %splash% EQU 100 echo  === 43d9dfa3ec233a574f9592346f7fef9e ===
 ECHO.
-ECHO. SORRY NO COINS IN THIS AREA
+ECHO. SORRY NO COINS IN THIS ORE
 ECHO 1 - MINE FOR MORE ORE
 ECHO 2 - GOTO MENU
 pause
 GOTO MINE
 
 :win1
-echo you mined a Moggy ore
+echo You mined a MoggyOre!!
 echo hash = !_RndAlphaNum!
 msg * U GOT SUM COIN
 set /a COINS+=1
