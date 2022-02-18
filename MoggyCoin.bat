@@ -31,7 +31,7 @@ IF %M%==1 GOTO MINE
 IF %M%==2 GOTO VIEW
 IF %M%==3 call SquirrelBoot
 IF %M%==4 GOTO AB
-IF %M%==5 start https://discord.gg/qqhgZhKBnX
+IF %M%==5 start https://squirrelcom.github.io/MoggyCoinSite/
 
 
 :VIEW
