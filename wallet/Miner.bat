@@ -7,7 +7,7 @@ setlocal enabledelayedexpansion
 
 :win1
 
-set _RNDLength=36
+set _RNDLength=56
 set _Alphanumeric=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789
 set _Str=%_Alphanumeric%987654321
 
