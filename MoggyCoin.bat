@@ -39,7 +39,7 @@ ECHO  _/    _/  _/_/_/        _/        _/    _/    _/    _/  _/  _/    _/_/
 ECHO _/    _/  _/    _/      _/        _/    _/    _/    _/    _/_/        _/      
 ECHO  _/_/    _/    _/        _/_/_/    _/_/    _/_/_/  _/      _/  _/_/_/
 ECHO.
-ECHO HERE U CAN C UR HARD EARND COINS
+ECHO HERE U CAN C UR HARD EARND COINS U MAKE DIS SESHUN
 echo %COINS% Ⰰ     (Ⰰ = MOGGYCOINS)
 pause
 goto MENU
@@ -172,7 +172,7 @@ ECHO YOU GOT 1M
 ECHO 1 - MINE FOR MORE ORE
 ECHO 2 - GOTO MENU
 echo.
-SET /P M=TYPE YOU CHOICE AND THEN PRESS ENTER:
+SET /P M=TYPE U CHOICE AN DEN PRES ENTR:
 IF %M%==1 GOTO MINE
 IF %M%==2 GOTO MENU
 
