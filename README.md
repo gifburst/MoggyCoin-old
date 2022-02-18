@@ -7,3 +7,11 @@ MoggyCoin Ⰰ
 MoggyCoin is a new generation of cryptocurrency inspired by the rise in NFTs. The MoggyCoin software allows anyone to generate MoggyCoin Coins which uses the .MOGGYCOIN file extension can be emailed and given to anyone.
 
 MoggyCoins consist of one of kind code which functions like an NFT you can sell it for money, keep it or send it to someone else. but you must verify ownership
+
+<h1>
+  How to use
+</h1>
+
+To get started with MoggyCoin you need to “mine” some using the MoggyCoin app. There is a 5% chance you will mine a MoggyOre and get a coin. Once you have done this check your wallet folder to see if you have gained a coin file. Files are saved in the .MOGGYCOIN file format ( Each MoggyCoin file is worth 1 MoggyCoin)
+
+You now have some MoggyCoin but you need to confirm it by registering it so it belongs to. 
