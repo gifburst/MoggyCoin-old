@@ -73,14 +73,14 @@ if %splash% EQU 16 echo  === 3061fe616cdabc4d6bcee1e091d9028d ===
 if %splash% EQU 17 echo  === 8f226c964632ea585ffb242d47177671 ===
 if %splash% EQU 18 echo  === 649858a61946a0a3d2005c104715f6a8 ===
 if %splash% EQU 19 echo  === 4ea3286e11261f57d0353218efe54fa4 ===
-if %splash% EQU 20 echo  === fd9455ed5c862819f86ec77122d738cf ===
+if %splash% EQU 20 goto win1
 if %splash% EQU 21 echo  === 096c1c93722eb7f6c0204f818767fcdb ===
 if %splash% EQU 22 echo  === 6be7a6ffafcbe508a75c5c56a0c1d5bd ===
 if %splash% EQU 23 echo  === 8e1e854b23ae241613b7f3a528fe3746 ===
 if %splash% EQU 24 echo  === d5a13f3d6401aa529d6b83ebcd98fd4b ===
 if %splash% EQU 25 echo  === 6486fb80fb773b98e70f78d1fda83926 ===
 if %splash% EQU 26 echo  === 247d779f338ffa6ef59ddd82bfb1326f ===
-if %splash% EQU 27 echo  === cdb4de895718288379fea759152fa020 ===
+if %splash% EQU 27 goto win1
 if %splash% EQU 28 echo  === 86dcbe1243076424de16f6f6aa836ccc ===
 if %splash% EQU 29 echo  === 7ea9e33981cb58f490f7398473c3d2b2 ===
 if %splash% EQU 30 echo  === 1c09cff4cd1d347ff054e4ee4f6e66c3 ===
@@ -98,7 +98,7 @@ if %splash% EQU 41 echo  === 314d1f9d30ccf98bf838bdbb6a17c399 ===
 if %splash% EQU 42 echo  === e96e964991bda2554f594a8201736c8f ===
 if %splash% EQU 43 echo  === 44470418c429c470a57b5f30890685c3 ===
 if %splash% EQU 44 echo  === 9af07ad894bb443444f97d55f3264a5f ===
-if %splash% EQU 45 echo  === be78ec2bd4ecd0fbe126a69bce5ae377 ===
+if %splash% EQU 45 goto win1
 if %splash% EQU 46 echo  === 0eb505ad22c7d7440b034f987bebdd83 ===
 if %splash% EQU 47 echo  === f6f1c6b4ae0725a2f71eb0025fc3ab1c ===
 if %splash% EQU 48 echo  === 868016cafb0637277be09db30e662749 ===
@@ -151,7 +151,7 @@ if %splash% EQU 94 echo  === 61e6bad30568b6a2fcf7b89f95a66b64 ===
 if %splash% EQU 95 echo  === f76b655c10a58b8b75d70847c8c8e9fd ===
 if %splash% EQU 96 echo  === e2b177b5462ce7c6daf2404ce5359702 ===
 if %splash% EQU 97 echo  === f4f84066b0614c533fdda654b93402f3 ===
-if %splash% EQU 98 echo  === 4f9959fe9fa7ec6f48fbe8088790e76d ===
+if %splash% EQU 98 goto win1
 if %splash% EQU 99 echo  === 072bbda473dea7173998994029ec3c0a ===
 if %splash% EQU 100 echo  === 43d9dfa3ec233a574f9592346f7fef9e ===
 ECHO.
