@@ -7,7 +7,7 @@ setlocal enabledelayedexpansion
 
 :win1
 
-set _RNDLength=56
+set _RNDLength=50
 set _Alphanumeric=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789
 set _Str=%_Alphanumeric%987654321
 
@@ -29,4 +29,4 @@ ECHO You mined a MoggyOre!!
 ECHO hash = %_RndAlphaNum%
 ECHO %date% %time% Miner Name %USERNAME%> !_RndAlphaNum!.MOGGYCOIN
 ECHO YOU GOT 1M
-EXIT /B
+CMD/C Miner.bat
