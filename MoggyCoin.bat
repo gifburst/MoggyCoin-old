@@ -194,6 +194,7 @@ set _RndAlphaNum=!_RndAlphaNum!!_Alphanumeric:~%_RND%,1!
 if !_count! lss %_RNDLength% goto _loop
 
 :AB
+CLS
 ECHO MOGGYCOIN
 ECHO.
 ECHO The new and secure cryptocurrency worth your time!
