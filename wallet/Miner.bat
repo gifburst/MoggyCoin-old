@@ -5,56 +5,56 @@ color F0
 setlocal enabledelayedexpansion
 
 set /a splash=%random%*100/32767+1
-if %splash% EQU 1 goto win1
-if %splash% EQU 2 goto win1
-if %splash% EQU 3 goto win1
-if %splash% EQU 4 goto win1
-if %splash% EQU 5 goto win1
-if %splash% EQU 6 goto win1
-if %splash% EQU 7 goto win1
-if %splash% EQU 8 goto win1
-if %splash% EQU 9 goto win1
-if %splash% EQU 10 goto win1
-if %splash% EQU 11 goto win1
-if %splash% EQU 12 goto win1
-if %splash% EQU 13 goto win1
-if %splash% EQU 14 goto win1
-if %splash% EQU 15 goto win1
-if %splash% EQU 16 goto win1
-if %splash% EQU 17 goto win1
-if %splash% EQU 18 goto win1
-if %splash% EQU 19 goto win1
-if %splash% EQU 20 goto win1
-if %splash% EQU 21 goto win1
-if %splash% EQU 22 goto win1
-if %splash% EQU 23 goto win1
-if %splash% EQU 24 goto win1
-if %splash% EQU 25 goto win1
-if %splash% EQU 26 goto win1
-if %splash% EQU 27 goto win1
-if %splash% EQU 28 goto win1
-if %splash% EQU 29 goto win1
-if %splash% EQU 30 goto win1
-if %splash% EQU 31 goto win1
-if %splash% EQU 32 goto win1
-if %splash% EQU 33 goto win1
-if %splash% EQU 34 goto win1
-if %splash% EQU 35 goto win1
-if %splash% EQU 36 goto win1
-if %splash% EQU 37 goto win1
-if %splash% EQU 38 goto win1
-if %splash% EQU 39 goto win1
-if %splash% EQU 40 goto win1
-if %splash% EQU 41 goto win1
-if %splash% EQU 42 goto win1
-if %splash% EQU 43 goto win1
-if %splash% EQU 44 goto win1
-if %splash% EQU 45 goto win1
-if %splash% EQU 46 goto win1
-if %splash% EQU 47 goto win1
-if %splash% EQU 48 goto win1
-if %splash% EQU 49 goto win1
-if %splash% EQU 50 goto win1
+if %splash% EQU 1 goto win2
+if %splash% EQU 2 goto win2
+if %splash% EQU 3 goto win2
+if %splash% EQU 4 goto win2
+if %splash% EQU 5 goto win2
+if %splash% EQU 6 goto win2
+if %splash% EQU 7 goto win2
+if %splash% EQU 8 goto win2
+if %splash% EQU 9 goto win2
+if %splash% EQU 10 goto win2
+if %splash% EQU 11 goto win2
+if %splash% EQU 12 goto win2
+if %splash% EQU 13 goto win2
+if %splash% EQU 14 goto win2
+if %splash% EQU 15 goto win2
+if %splash% EQU 16 goto win2
+if %splash% EQU 17 goto win2
+if %splash% EQU 18 goto win2
+if %splash% EQU 19 goto win2
+if %splash% EQU 20 goto win2
+if %splash% EQU 21 goto win2
+if %splash% EQU 22 goto win2
+if %splash% EQU 23 goto win2
+if %splash% EQU 24 goto win2
+if %splash% EQU 25 goto win3
+if %splash% EQU 26 goto win3
+if %splash% EQU 27 goto win3
+if %splash% EQU 28 goto win3
+if %splash% EQU 29 goto win3
+if %splash% EQU 30 goto win3
+if %splash% EQU 31 goto win3
+if %splash% EQU 32 goto win3
+if %splash% EQU 33 goto win3
+if %splash% EQU 34 goto win3
+if %splash% EQU 35 goto win4
+if %splash% EQU 36 goto win4
+if %splash% EQU 37 goto win4
+if %splash% EQU 38 goto win4
+if %splash% EQU 39 goto win4
+if %splash% EQU 40 goto win4
+if %splash% EQU 41 goto win4
+if %splash% EQU 42 goto win4
+if %splash% EQU 43 goto win4
+if %splash% EQU 44 goto win4
+if %splash% EQU 45 goto win5
+if %splash% EQU 46 goto win5
+if %splash% EQU 47 goto win5
+if %splash% EQU 48 goto win5
+if %splash% EQU 49 goto win5
+if %splash% EQU 50 goto win6
 if %splash% EQU 51 goto win1
 if %splash% EQU 52 goto win1
 if %splash% EQU 53 goto win1
@@ -107,7 +107,7 @@ if %splash% EQU 99 goto win1
 if %splash% EQU 100 goto win1
 
 
-:win1
+:ORE generator
 
 set _RNDLength=50
 set _Alphanumeric=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789
@@ -127,8 +127,44 @@ set /A _RND=_RND%%%_Len%
 set _RndAlphaNum=!_RndAlphaNum!!_Alphanumeric:~%_RND%,1!
 if !_count! lss %_RNDLength% goto _loop
 
+:win1
 ECHO You mined a MoggyOre!!
 ECHO hash = %_RndAlphaNum%
-ECHO %date% %time% Miner Name %USERNAME%> !_RndAlphaNum!.MOGGYCOIN
+ECHO %date% %time% Miner Name %USERNAME% Value Grade 1> !_RndAlphaNum!-01.MOGGYCOIN
 ECHO YOU GOT 1M
+CMD/C Miner.bat
+
+:win2
+ECHO You mined a MoggyOre!!
+ECHO hash = %_RndAlphaNum%
+ECHO %date% %time% Miner Name %USERNAME% Value Grade 5> !_RndAlphaNum!-05.MOGGYCOIN
+ECHO YOU GOT 5M
+CMD/C Miner.bat
+
+:win3
+ECHO You mined a MoggyOre!!
+ECHO hash = %_RndAlphaNum%
+ECHO %date% %time% Miner Name %USERNAME% Value Grade 10> !_RndAlphaNum!-10.MOGGYCOIN
+ECHO YOU GOT 10M
+CMD/C Miner.bat
+
+:win4
+ECHO You mined a MoggyOre!!
+ECHO hash = %_RndAlphaNum%
+ECHO %date% %time% Miner Name %USERNAME% Value Grade 20> !_RndAlphaNum!-20.MOGGYCOIN
+ECHO YOU GOT 20M
+CMD/C Miner.bat
+
+:win5
+ECHO You mined a MoggyOre!!
+ECHO hash = %_RndAlphaNum%
+ECHO %date% %time% Miner Name %USERNAME% Value Grade 50> !_RndAlphaNum!-50.MOGGYCOIN
+ECHO YOU GOT 50M
+CMD/C Miner.bat
+
+:win6
+ECHO You mined a MoggyOre!!
+ECHO hash = %_RndAlphaNum%
+ECHO %date% %time% Miner Name %USERNAME% Value Grade 100> !_RndAlphaNum!-100.MOGGYCOIN
+ECHO YOU GOT 100M
 CMD/C Miner.bat
