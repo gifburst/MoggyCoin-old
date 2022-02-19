@@ -3,7 +3,9 @@ title MoggyCoin
 cd wallet
 color F0
 setlocal enabledelayedexpansion
+GOTO Mine
 
+:Mine
 set /a splash=%random%*100/32767+1
 if %splash% EQU 1 goto win2
 if %splash% EQU 2 goto win2
@@ -132,39 +134,39 @@ ECHO You mined a MoggyOre!!
 ECHO hash = %_RndAlphaNum%
 ECHO %date% %time% Miner Name %USERNAME% Value Grade 1> !_RndAlphaNum!-01.MOGGYCOIN
 ECHO YOU GOT 1M
-CMD/C Miner.bat
+GOTO :EOF
 
 :win2
 ECHO You mined a MoggyOre!!
 ECHO hash = %_RndAlphaNum%
 ECHO %date% %time% Miner Name %USERNAME% Value Grade 5> !_RndAlphaNum!-05.MOGGYCOIN
 ECHO YOU GOT 5M
-CMD/C Miner.bat
+GOTO :EOF
 
 :win3
 ECHO You mined a MoggyOre!!
 ECHO hash = %_RndAlphaNum%
 ECHO %date% %time% Miner Name %USERNAME% Value Grade 10> !_RndAlphaNum!-10.MOGGYCOIN
 ECHO YOU GOT 10M
-CMD/C Miner.bat
+GOTO :EOF
 
 :win4
 ECHO You mined a MoggyOre!!
 ECHO hash = %_RndAlphaNum%
 ECHO %date% %time% Miner Name %USERNAME% Value Grade 20> !_RndAlphaNum!-20.MOGGYCOIN
 ECHO YOU GOT 20M
-CMD/C Miner.bat
+GOTO :EOF
 
 :win5
 ECHO You mined a MoggyOre!!
 ECHO hash = %_RndAlphaNum%
 ECHO %date% %time% Miner Name %USERNAME% Value Grade 50> !_RndAlphaNum!-50.MOGGYCOIN
 ECHO YOU GOT 50M
-CMD/C Miner.bat
+GOTO :EOF
 
 :win6
 ECHO You mined a MoggyOre!!
 ECHO hash = %_RndAlphaNum%
 ECHO %date% %time% Miner Name %USERNAME% Value Grade 100> !_RndAlphaNum!-100.MOGGYCOIN
 ECHO YOU GOT 100M
-CMD/C Miner.bat
+GOTO :EOF
