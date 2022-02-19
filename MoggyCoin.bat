@@ -22,14 +22,16 @@ ECHO  ................................
 ECHO.
 ECHO  1 - MINE SUM COINS                   
 ECHO  2 - ABOUT
-ECHO  3 - GO REGISTR OR SELL SUM COINS
-ECHO  4 - BYE BYE
+ECHO  3 - WUT R GRADEZ
+ECHO  4 - GO REGISTR OR SELL SUM COINS
+ECHO  5 - BYE BYE
 ECHO.          
 SET /P M=TYPE U CHOICE AN DEN PRES ENTR:
 IF %M%==1 GOTO MINE
 IF %M%==2 GOTO AB
-IF %M%==3 start https://squirrelcom.github.io/MoggyCoinSite/
-IF %M%==4 call SquirrelBoot
+IF %M%==3 GOTO GRADEZ
+IF %M%==4 start https://squirrelcom.github.io/MoggyCoinSite/
+IF %M%==5 call SquirrelBoot
 
 :MINE
 cls
@@ -55,3 +57,5 @@ ECHO Copyright (c) Squirrel Computers and Adam 2021 to 2022
 ECHO.
 pause
 GOTO MENU
+
+:GRADZ
