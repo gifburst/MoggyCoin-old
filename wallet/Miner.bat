@@ -26,6 +26,6 @@ if !_count! lss %_RNDLength% goto _loop
 
 ECHO You mined a MoggyOre!!
 ECHO hash = %_RndAlphaNum%
-ECHO %date% %time% Miner Name %USERNAME% Value Grade 1> !_RndAlphaNum!-01.MOGGYCOIN
+ECHO %date% %time% Miner Name %USERNAME%> !_RndAlphaNum!.MOGGYCOIN
 ECHO YOU GOT 1M
 GOTO :EOF
