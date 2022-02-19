@@ -21,30 +21,15 @@ ECHO  TYPE ANY NUMBER AND DO SOMETHING
 ECHO  ................................
 ECHO.
 ECHO  1 - MINE SUM COINS                   
-ECHO  3 - BYE BYE
-ECHO  4 - ABOUT
-ECHO  5 - GO REGISTR OR SELL SUM COINS
+ECHO  2 - ABOUT
+ECHO  3 - GO REGISTR OR SELL SUM COINS
+ECHO  4 - BYE BYE
 ECHO.          
 SET /P M=TYPE U CHOICE AN DEN PRES ENTR:
 IF %M%==1 GOTO MINE
-IF %M%==2 GOTO VIEW
-IF %M%==3 call SquirrelBoot
-IF %M%==4 GOTO AB
-IF %M%==5 start https://squirrelcom.github.io/MoggyCoinSite/
-
-
-:VIEW
-cls
-ECHO    _/    _/  _/_/_/          _/_/_/    _/_/    _/_/_/  _/      _/    _/_/_/   
-ECHO   _/    _/  _/    _/      _/        _/    _/    _/    _/_/    _/  _/          
-ECHO  _/    _/  _/_/_/        _/        _/    _/    _/    _/  _/  _/    _/_/       
-ECHO _/    _/  _/    _/      _/        _/    _/    _/    _/    _/_/        _/      
-ECHO  _/_/    _/    _/        _/_/_/    _/_/    _/_/_/  _/      _/  _/_/_/
-ECHO.
-ECHO HERE U CAN C UR HARD EARND COINS U MAKE DIS SESHUN
-ECHO %COINS%M (M=MoggyCoin)
-pause
-goto MENU
+IF %M%==2 GOTO AB
+IF %M%==3 start https://squirrelcom.github.io/MoggyCoinSite/
+IF %M%==4 call SquirrelBoot
 
 :MINE
 cls
